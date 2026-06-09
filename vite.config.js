@@ -3,6 +3,9 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
+  // INI YANG PALING PENTING UNTUK CUSTOM DOMAIN/SUBDOMAIN
+  base: '/',  // Karena pakai subdomain sendiri, base harus '/'
+  
   server: {
     port: 3000,
     open: true,
